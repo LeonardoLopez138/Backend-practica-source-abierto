@@ -1,6 +1,6 @@
 package com.acme.nubi.platform.shared.infrastructure.events;
 
-import com.acme.center.platform.shared.domain.model.aggregates.AbstractDomainAggregateRoot;
+import com.acme.nubi.platform.shared.domain.model.aggregates.AbstractDomainAggregateRoot;
 import org.jspecify.annotations.NullMarked;
 import org.jspecify.annotations.Nullable;
 import org.springframework.context.ApplicationEventPublisher;
