@@ -1,4 +1,4 @@
-package com.acme.nubi.platform.caterpillar.infrastructure.persistance.jpa.converters;
+package com.acme.nubi.platform.caterpillar.infrastructure.persistence.jpa.converters;
 import com.acme.nubi.platform.caterpillar.domain.model.valueobjects.CatMiningEquipmentUnitId;
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;

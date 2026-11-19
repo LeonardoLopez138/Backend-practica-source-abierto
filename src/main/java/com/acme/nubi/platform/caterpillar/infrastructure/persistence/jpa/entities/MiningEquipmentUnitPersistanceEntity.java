@@ -1,4 +1,4 @@
-package com.acme.nubi.platform.caterpillar.infrastructure.persistance.jpa.entities;
+package com.acme.nubi.platform.caterpillar.infrastructure.persistence.jpa.entities;
 
 import com.acme.nubi.platform.caterpillar.domain.model.valueobjects.CatMiningEquipmentUnitId;
 import com.acme.nubi.platform.caterpillar.domain.model.valueobjects.OperationStatus;

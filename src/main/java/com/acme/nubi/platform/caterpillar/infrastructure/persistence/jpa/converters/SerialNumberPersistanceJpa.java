@@ -1,11 +1,10 @@
-package com.acme.nubi.platform.caterpillar.infrastructure.persistance.jpa.converters;
+package com.acme.nubi.platform.caterpillar.infrastructure.persistence.jpa.converters;
 
-import com.acme.nubi.platform.caterpillar.domain.model.valueobjects.CatMiningEquipmentUnitId;
 import com.acme.nubi.platform.caterpillar.domain.model.valueobjects.SerialNumber;
 import jakarta.persistence.AttributeConverter;
+import jakarta.persistence.Converter;
 
-import java.util.UUID;
-
+@Converter(autoApply = false)
 public class SerialNumberPersistanceJpa  implements AttributeConverter<SerialNumber, String> {
 
     @Override
