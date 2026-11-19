@@ -2,11 +2,11 @@ package com.acme.nubi.platform.caterpillar.domain.model.valueobjects;
 
 import java.util.regex.Pattern;
 
-public record LockerNumber(String value) {
+public record SerialNumber(String value) {
     private static final Pattern PATTER_LOCKED_REGEX =
             Pattern.compile("^L[0-9]{3}$");
 
-    public LockerNumber{
+    public SerialNumber {
         if(value == null || value.isBlank()){
             throw new IllegalArgumentException("No puede ser ni nulo ni blanco");
         }
