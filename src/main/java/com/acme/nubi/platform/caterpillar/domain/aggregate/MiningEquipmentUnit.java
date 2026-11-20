@@ -20,7 +20,6 @@ public class MiningEquipmentUnit extends AbstractDomainAggregateRoot<MiningEquip
     private String serialNumber;
     private GeoCoordinate gpsLocation;
 
-
     //                                                               ^
 //se pasan los datos que se le de commandservices y se guarda arriba |
     public MiningEquipmentUnit(OperationStatus OperationStatus, String SerialNumber, GeoCoordinate GeoCoordinate) {

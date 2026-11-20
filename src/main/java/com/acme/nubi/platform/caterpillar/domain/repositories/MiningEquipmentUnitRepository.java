@@ -10,4 +10,9 @@ import java.util.Optional;
 public interface MiningEquipmentUnitRepository extends ICrudService<MiningEquipmentUnit,Long> {
     Optional<MiningEquipmentUnit> findBySerialNumber(String serialNumber);
 
+    boolean existsBySerialNumber(String serialNumber);
+
 }
+
+
+//de aqui salen los metodos para el adapter
