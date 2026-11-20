@@ -11,12 +11,16 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = lombok.AccessLevel.PROTECTED)
 public class GeoCoordinateEmbeddable {
 
+    //se agrega el primer dato
     @Column(name = "gps_latitude", nullable = false)
     private double lat;
 
+    //se agrega el segundo dato
     @Column(name = "gps_longitude", nullable = false)
     private double lon;
 
+
+    //los dos se juntan en el constructor
     public GeoCoordinateEmbeddable(double latitude, double longitude) {
         this.lat = latitude;
         this.lon = longitude;
