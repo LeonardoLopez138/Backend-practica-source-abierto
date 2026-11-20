@@ -9,7 +9,6 @@ public GeoCoordinate{
     if(!(180>=lon && lon>=-180))
     {
         throw new IllegalArgumentException("No puede sobrepasar los 180 y -180");
-
     }
 }
 }
