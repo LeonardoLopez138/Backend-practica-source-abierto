@@ -14,7 +14,7 @@ public class MiningEquipmentUnit extends AbstractDomainAggregateRoot<MiningEquip
 
     //este id es unicamente para la base de datos
     //tiene que ser un int
-    private int id;
+    private Long id;
     private CatMiningEquipmentUnitId equipmentUnitId;
     private OperationStatus operationStatus;
     private String serialNumber;
@@ -29,5 +29,15 @@ public class MiningEquipmentUnit extends AbstractDomainAggregateRoot<MiningEquip
         this.operationStatus = OperationStatus;
         this.serialNumber = SerialNumber;
         this.gpsLocation = GeoCoordinate;
+    }
+
+
+    public static MiningEquipmentUnit reconstitute(Long id, CatMiningEquipmentUnitId equipmentUnitId,OperationStatus operationStatus, String serialNumber, GeoCoordinate geoCoordinate) {
+        var miningEquipmentUnit = new MiningEquipmentUnit(operationStatus,serialNumber, geoCoordinate);
+        miningEquipmentUnit.id = id;
+        miningEquipmentUnit.serialNumber = serialNumber;
+        miningEquipmentUnit.equipmentUnitId =equipmentUnitId;
+        miningEquipmentUnit.operationStatus = operationStatus;
+        return miningEquipmentUnit;
     }
 }
